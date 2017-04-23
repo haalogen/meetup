@@ -21,12 +21,29 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
+    <h1>Event registration</h1>
     <div class="card">
-      <div class="circle">2</div>
-      <h1>View Two</h1>
-      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.</p>
-      <p>Id nam odio natum malorum, tibique copiosae expetenda mel ea.Detracto suavitate repudiandae no eum. Id adhuc minim soluta nam.Id nam odio natum malorum, tibique copiosae expetenda mel ea.</p>
+      <p>Event Timing: April 3rd, 2017</p>
+      <p>Event Address: 75 9th Ave, New York, NY 10011</p>
+      <p>Contact us at 
+        <a href="tel:+1-303-499-7111">+1 (303) 499-7111</a> 
+        or 
+        <a href="mailto:no_reply@example.com">no_reply@example.com</a>
+      </p>
+      <p style="color: #db4437">All fields are required</p>
     </div>
+    <div class="card">
+      <form is="iron-form" id="form" method="post" action="/form/handler">
+        <paper-input name="name" label="Name" pattern="[a-zA-z ]" required auto-validate></paper-input>
+        <paper-input name="email" label="Email" required auto-validate></paper-input>
+        <paper-input name="password" label="Password" type="password" required auto-validate></paper-input>
+        <paper-checkbox name="read" required>I agree to the processing and storage of my personal data</paper-checkbox><br>
+        <paper-button raised onclick="_reset(event)">Reset</paper-button>
+        <paper-button raised onclick="submitForm()">Submit</paper-button>
+      </form>
+    </div>
+    
+    
   </template>
 
   <script>
@@ -35,3 +52,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     });
   </script>
 </dom-module>
+
+<script>
+function _reset(event) {
+    let form = Polymer.dom(event).localTarget.parentElement;
+    form.reset();
+  }
+
+function submitForm () {
+  
+}
+</script>

@@ -1,10 +1,10 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/my-app.html",
+  "shell": "src/meetup-app.html",
   "fragments": [
-    "src/my-view1.html",
-    "src/my-view2.html",
-    "src/my-view404.html"
+    "src/meetup-view1.html",
+    "src/meetup-view2.html",
+    "src/meetup-view404.html"
   ],
   "sourceGlobs": [
     "src/**/*",

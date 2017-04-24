@@ -1,8 +1,6 @@
 # Meetup -- Polymer App
 
-Online demo:
-
-    https://meetup-d14b5.firebaseapp.com/
+[Online demo](https://meetup-d14b5.firebaseapp.com/)  
 
 
 ### Setup
